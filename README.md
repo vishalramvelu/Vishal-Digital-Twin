@@ -1,6 +1,6 @@
 # Vishal's Twin
 
-An agentic RAG system that acts as my digital twin. Ask it anything about my background, skills, experience, or schedule — it responds as me, grounded in real data.
+An agentic RAG system that acts as my digital twin. Ask it anything about my background, skills, experience, or schedule. It responds as me, grounded in real data.
 
 Built as a take-home for [Viven](https://viven.ai). Deep-dive focus: **Data Integrations** (Outlook + Google Calendar).
 
