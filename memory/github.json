@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "source": "github_api",
+    "github_user": "vishalramvelu",
+    "last_updated": "2026-03-01",
+    "schema_version": "2.0",
+    "repo_count": 8
+  },
+  "chunks": [
+    {
+      "id": "gh_algorithimic_auto_trade_bot_overview",
+      "category": "github_project",
+      "tags": [
+        "Algorithimic-Auto-Trade-Bot",
+        "github",
+        "Python"
+      ],
+      "text": "GitHub project: Algorithimic-Auto-Trade-Bot (github.com/vishalramvelu/Algorithimic-Auto-Trade-Bot).\nDescription: Automated momentum trading algorithm integrating sentimentality analysis and technical indicators.\nPrimary language: Python. All languages: Python (89%), HTML (11%).\nTopics: None.\nStars: 0, Forks: 0.\nCreated: 2023-07-05, Last updated: 2025-07-09."
+    },
+    {
+      "id": "gh_algorithimic_auto_trade_bot_readme",
+      "category": "github_project",
+      "tags": [
+        "Algorithimic-Auto-Trade-Bot",
+        "github",
+        "readme",
+        "Python"
+      ],
+      "text": "README for GitHub project Algorithimic-Auto-Trade-Bot:\n\n# Algorithimic Auto Trade Bot\n\nThis is an automated momentum trading algorithim integrating sentimentality analysis from financial news, technical metrics, and risk-mitigating strategies. It uses historical price data from Yahoo Finance API and performs technical analysis to identify potential buy and sell opportunities. The bot also incorporates sentiment analysis on financial news articles to gauge market sentiment and adjust trading decisions accordingly.  \n\n## Framework \n* Backend: Python, Flask, Pandas, NLTK, Beautiful Soup, TA-lib, Matplotlib\n* Frontend: HTML/CSS, Vanilla Javascript\n\n## Features \n* Momentum Trading: Identifies stocks with upward momentum and potential for continued price increases\n* Sentimental Analysis: Performs sentiment analysis on financial news articles to understand market sentiment and adjust trading decisions daily\n* Bollinger Bands + Moving Averge Convergence-Divergence: Used to identify potential bullish and bearish conditions for trading signals using TA-lib\n* Risk Management (Position Sizing): Determines the appropriate position size based on risk percentage managing profit/loss ratio\n\n## Build\nTo use the Algorithmic Auto Trade Bot:\n\n1. Clone this repository: `git clone https://github.com/vishalramvelu/Algorithimic-Auto-Trade-Bot.git`\n2. Install the required dependencies: `pip install -r requirements.txt`\n3. Customize the trading parameters:\n   * Set the start_date and end_date variables to define the date range for the analysis\n   * Modify the tickers list to include the desired stock tickers.\n4. Run Flask application to start web server: `python3 app.py`\n5. Review the output, including price charts, technical indicators, and trading signals.\n\n## Contributing\nContributions are welcome! If you'd like to enhance this project or report issues, please submit a pull request or open an issue.\n\n  \n"
+    },
+    {
+      "id": "gh_algorithimic_auto_trade_bot_techstack",
+      "category": "github_project",
+      "tags": [
+        "Algorithimic-Auto-Trade-Bot",
+        "github",
+        "techstack"
+      ],
+      "text": "Tech stack and structure for GitHub project Algorithimic-Auto-Trade-Bot:\n\nTop-level files and directories: Base Trading Algorithim.py, Fin News Sentimentality Analysis.py, LICENSE, README.md, Risk Sentimental Trading Algo.py, Technical Metrics Visualization.py, app.py, index.html, requirements.txt\nPython dependencies (requirements.txt):\nFlask\npandas\nnltk\nbeautifulsoup4\nTA-Lib\nmatplotlib\nyfinance\nrequests\n"
+    },
+    {
+      "id": "gh_betglobal_overview",
+      "category": "github_project",
+      "tags": [
+        "BetGlobal",
+        "github",
+        "Python"
+      ],
+      "text": "GitHub project: BetGlobal (github.com/vishalramvelu/BetGlobal).\nDescription: A modern betting platform that connects users worldwide for 0-fee Peer-to-Peer betting.\nPrimary language: Python. All languages: Python (44%), HTML (38%), CSS (14%), JavaScript (3%), Mako (0%), Procfile (0%).\nTopics: None.\nStars: 2, Forks: 0.\nCreated: 2025-04-14, Last updated: 2026-01-04."
+    },
+    {
+      "id": "gh_betglobal_readme",
+      "category": "github_project",
+      "tags": [
+        "BetGlobal",
+        "github",
+        "readme",
+        "Python"
+      ],
+      "text": "README for GitHub project BetGlobal:\n\n# BetGlobal\n\nA secure, modern betting platform that connects users worldwide for 0-fee Peer-to-Peer betting. Anyone can create a bet and anyone can accept.\n\n## Visit the Site\nFeel free to check out the [website here!](https://betgloballive.com/landing)\n\n<img width=\"1468\" alt=\"Screenshot 2025-06-24 at 11 22 58\u202fPM\" src=\"https://github.com/user-attachments/assets/640e0de3-69bc-405c-8811-3055b618671e\" />\n\n## Framework\n* Backend: Python, Flask, PostgreSQL\n* Frontend: Javascript, React, HTML/CSS, Bootstrap\n* Deployment: AWS Elastic Beanstalk (EC2 + RDS)\n\n## Features\n* Reliable JWT-based Authorization + 2FA Authentication\n* Seamless Stripe Payment Integration\n* Consistent bet verification handling through photo evidence + admin involvement\n* Production-level security features including CSRF protection, rate limiting, and HTTPS enforced headers\n\n\n## Local Installation\n\nTo access website implementation and features locally, closely follow instructions in `DEVELOPMENT_GUIDE.md`\n\n## Contributing\nContributions are welcome! If you'd like to enhance this website or report any issues, please submit a pull request or open an issue. \n"
+    },
+    {
+      "id": "gh_betglobal_techstack",
+      "category": "github_project",
+      "tags": [
+        "BetGlobal",
+        "github",
+        "techstack"
+      ],
+      "text": "Tech stack and structure for GitHub project BetGlobal:\n\nTop-level files and directories: .gitattributes, .gitignore, DEVELOPMENT_GUIDE.md, Procfile, README.md, app.py, database.py, forms.py, main.py, migrations/, models.py, notifications.py, requirements.txt, run_dev.py, scheduler.py, setup_dev.py, setup_env.py, static/, templates/, test_security.py, uploads/\nPython dependencies (requirements.txt):\nFlask==3.0.3\npython-dotenv==1.0.1\nFlask-Cors==4.0.0\nFlask-Mail==0.10.0\nFlask-Migrate==4.1.0\nFlask-Security==5.6.2\nFlask-WTF==1.2.2\nFlask-Limiter==3.12\nFlask-Talisman==1.1.0\nFlask-SQLAlchemy==3.1.1\nSQLAlchemy==2.0.30\nstripe==12.2.0\nWTForms==3.2.1\nrequests==2.31.0\ncolorama==0.4.6"
+    },
+    {
+      "id": "gh_edge_insights_overview",
+      "category": "github_project",
+      "tags": [
+        "Edge-Insights",
+        "github",
+        "Python"
+      ],
+      "text": "GitHub project: Edge-Insights (github.com/vishalramvelu/Edge-Insights).\nDescription: Personalized dashboard designed to track performance over time.\nPrimary language: Python. All languages: Python (72%), HTML (28%).\nTopics: None.\nStars: 1, Forks: 0.\nCreated: 2025-02-10, Last updated: 2025-08-08."
+    },
+    {
+      "id": "gh_edge_insights_readme",
+      "category": "github_project",
+      "tags": [
+        "Edge-Insights",
+        "github",
+        "readme",
+        "Python"
+      ],
+      "text": "README for GitHub project Edge-Insights:\n\n# Edge Insights\n\nFull-stack web application that lets users have personalized tracking of their bets and monitor\ncumulative profit/loss over time. Info displayed in a clean interface to visualize analytics like\nROI, win/loss ratios, and profit trends. User can filter, sort, and edit bets to gain insights\ninto their overall performance. \n\n## Visit the Site\nFeel free to check out the [website here!](https://pokerbuddy.app/landing)\n\n<img width=\"1470\" height=\"832\" alt=\"Screenshot 2025-07-13 at 2 46 52\u202fPM\" src=\"https://github.com/user-attachments/assets/0970de42-67f2-4679-89c0-db6c0f50a6c7\" />\n\n## Framework\n* Backend: Python, Flask, PostgreSQL\n* Frontend: HTML, Tailwind CSS, Vanilla Javascript\n\n## Features\n* User signup/login management + password encryption\n* User data storage - csv\n* User account info storage - json\n* Analytical tracking and analytics implementation with intuitive display\n\n## Build\n1. \n```\npip3 install -r requirements.txt\n```\n\n2. \n```\npython3 app.py\n```\n## Contributing\nContributions are welcome! If you'd like to enhance this project or report issues, please submit a pull request or open an issue.\n"
+    },
+    {
+      "id": "gh_edge_insights_techstack",
+      "category": "github_project",
+      "tags": [
+        "Edge-Insights",
+        "github",
+        "techstack"
+      ],
+      "text": "Tech stack and structure for GitHub project Edge-Insights:\n\nTop-level files and directories: .gitattributes, LICENSE, README.md, app.py, requirements.txt, templates/, userdata/\nPython dependencies (requirements.txt):\nFlask\npandas\nnumpy\nWerkzeug"
+    },
+    {
+      "id": "gh_https_github_com_illinois_cs_coursework_fa22_ece120_ramvelu2_overview",
+      "category": "github_project",
+      "tags": [
+        "https-github.com-illinois-cs-coursework-fa22_ece120_ramvelu2",
+        "github",
+        "unknown"
+      ],
+      "text": "GitHub project: https-github.com-illinois-cs-coursework-fa22_ece120_ramvelu2 (github.com/vishalramvelu/https-github.com-illinois-cs-coursework-fa22_ece120_ramvelu2).\nDescription: No description provided.\nPrimary language: N/A. All languages: None detected.\nTopics: None.\nStars: 0, Forks: 0.\nCreated: 2022-09-01, Last updated: 2022-09-01."
+    },
+    {
+      "id": "gh_instatruth_overview",
+      "category": "github_project",
+      "tags": [
+        "InstaTruth",
+        "github",
+        "Python"
+      ],
+      "text": "GitHub project: InstaTruth (github.com/vishalramvelu/InstaTruth).\nDescription: A hybrid fact-checking system that combines NLP and LLMs to verify short-form content credibility.\nPrimary language: Python. All languages: Python (57%), HTML (41%), CSS (2%).\nTopics: None.\nStars: 1, Forks: 0.\nCreated: 2025-04-11, Last updated: 2025-07-12."
+    },
+    {
+      "id": "gh_instatruth_readme",
+      "category": "github_project",
+      "tags": [
+        "InstaTruth",
+        "github",
+        "readme",
+        "Python"
+      ],
+      "text": "README for GitHub project InstaTruth:\n\n# InstaTruth\n\nA hybrid fact-checking system that combines natural language processing and web search to verify the truthfulness of claims and statements made in short-form content (Tiktoks, Instagram Reels, Youtube Shorts, etc).\n\n## Visit the Site\nFeel free to check out the [website here!](https://instatruth.app/)\n\n<img width=\"1469\" alt=\"Screenshot 2025-06-25 at 10 59 54\u202fAM\" src=\"https://github.com/user-attachments/assets/86789e37-2672-438f-86e4-c204e9251dd2\" />\n\n## Framework\n* Backend: Python, Flask, Scikit-learn, PyTorch, OpenAI Whisper, DeepSeek API, Google Custom Search API\n* Frontend: Javascript, React, Next.js, Tailwind CSS, HTML\n* Deployment: Docker, Railway \n\n## Overview\n\nInstaTruth uses a two-stage approach to fact-checking:\n1. **NLP Analysis**: A BERT-based classifier provides initial fake/real classification\n2. **Web Search Verification**: Google search results are analyzed by an LLM (DeepSeek) for fact-checking\n3. **Combined Scoring**: Results from both stages are weighted and combined for a final verdict\n\n## Features\n\n* NLP Analysis using 110M paramter DistilBERT model for semantic classifcation\n* Speech-to-Text using OpenAI Whisper transcribes video audio with 99.1 accuracy\n* Multi-Step Web Verification using Google custom search API with DeepSeek analysis\n* Detailed evidence summaries for each claim citing reasons for final output with sources linked\n\n## Setup\n\n1. Install dependencies:\n- Requires `python3 --version == 3.11.3`\n```bash\npip3 install -r requirements.txt\n```\n\n2. Create and setup `.env`:\n```\nDEEPSEEK_KEY=your-key\nGOOG_CSE_ID=your-key\nGOOG_KEY=your-key\nACCESS_KEY=access-key (you decide)\nFLASK_SECRET=flask-secret (you decide)\n```\n\n3. Download model:\n- Use `git lfs pull` to download complete `rfc_model.joblib`\n\n## Local Usage\n\n```bash\npython3 app.py\n```\n\n## Troubleshooting\nIf you are having issues running the program, try:\n- `brew install ffmpeg`\n- `python3 fixcert.py`\n\nand check\n- `.env` setup\n- `rfc_model.joblib` pulled using `git lfs`\n\n## Contributing\nContributions are welcome! If you'd like to enhance this website or report any issues, please submit a pull request or open an issue. \n"
+    },
+    {
+      "id": "gh_instatruth_techstack",
+      "category": "github_project",
+      "tags": [
+        "InstaTruth",
+        "github",
+        "techstack"
+      ],
+      "text": "Tech stack and structure for GitHub project InstaTruth:\n\nTop-level files and directories: .gitattributes, .gitignore, KEYS.py, LICENSE, README.md, app.py, bert.py, fixcert.py, instatruth.py, integratedresult.py, requirements.txt, rfc_model.joblib, static/, templates/, vidtotext.py, websearch.py\nPython dependencies (requirements.txt):\njoblib==1.3.2\nnumpy>=1.23.2\npandas==2.3.0\nRequests==2.32.4\nscikit_learn==1.3.1\ntorch==2.5.1\ntransformers==4.51.3\ndotenv>=0.9.9\nmoviepy>=2.2.1\nyt-dlp>=2025.6.9\nwhisper @ git+https://github.com/openai/whisper.git \nFlask>=3.0.0"
+    },
+    {
+      "id": "gh_nba_game_predictor_ml_overview",
+      "category": "github_project",
+      "tags": [
+        "NBA-Game-Predictor-ML",
+        "github",
+        "Jupyter Notebook"
+      ],
+      "text": "GitHub project: NBA-Game-Predictor-ML (github.com/vishalramvelu/NBA-Game-Predictor-ML).\nDescription: NBA Machine Learning model that predicts outcome of NBA games.\nPrimary language: Jupyter Notebook. All languages: Jupyter Notebook (100%).\nTopics: None.\nStars: 0, Forks: 0.\nCreated: 2023-06-12, Last updated: 2025-07-09."
+    },
+    {
+      "id": "gh_nba_game_predictor_ml_readme",
+      "category": "github_project",
+      "tags": [
+        "NBA-Game-Predictor-ML",
+        "github",
+        "readme",
+        "Jupyter Notebook"
+      ],
+      "text": "README for GitHub project NBA-Game-Predictor-ML:\n\n# NBA Game Predictor\n\nThis is an NBA machine learning program built using Python and the scikit-learn library designed to predict the outcome of NBA games based on various features and historical data from 12,000+ previous games. It utilizes a Random Forest classifier and implements feature selection techniques to improve prediction accuracy.\n\n## Framework\nPython, Scikit-learn, Beautiful Soup, Numpy, Pandas, Matplotlib \n\n## Features\n* Multiple ML feature predictions for enhanced accuracy (Random Forest, XG Boost, Linear Regression)\n* Web scraped 12,000+ NBA games + box scores for most up-to-date statistics\n* Incoporates contextual information about games such as home court advantage, back-to-back games, etc using selective data preprocessing with Pandas\n* Result verified with test-train split, cross validation, and visualization tools like confusion matrices\n\n## Build\nTo use the NBA Game Predictor ML Program:\n\n1. Clone the repository: `git clone https://github.com/vishalramvelu/NBA-Game-Predictor-ML.git`\n2. Install the required dependencies: `pip install -r requirements.txt`\n3. Run the program: `python main.py`\n4. Follow the prompts to interact with the program and view the prediction results.\n\n## Contributing\nContributions are welcome! If you'd like to enhance this project or report issues, please submit a pull request or open an issue.\n\n\n\n\n\n\n\n\n\n\n"
+    },
+    {
+      "id": "gh_nba_game_predictor_ml_techstack",
+      "category": "github_project",
+      "tags": [
+        "NBA-Game-Predictor-ML",
+        "github",
+        "techstack"
+      ],
+      "text": "Tech stack and structure for GitHub project NBA-Game-Predictor-ML:\n\nTop-level files and directories: .gitignore, README.md, get_data.ipynb, parse_data.ipynb, predict-RandomForest.ipynb, predict-RidgeRegression.ipynb, requirements.txt\nPython dependencies (requirements.txt):\nnumpy\npandas\nscikit-learn\nxgboost\nbeautifulsoup4\nrequests\nmatplotlib\n"
+    },
+    {
+      "id": "gh_portfolio_overview",
+      "category": "github_project",
+      "tags": [
+        "Portfolio",
+        "github",
+        "TypeScript"
+      ],
+      "text": "GitHub project: Portfolio (github.com/vishalramvelu/Portfolio).\nDescription: No description provided.\nPrimary language: TypeScript. All languages: TypeScript (84%), CSS (9%), JavaScript (5%), Shell (2%).\nTopics: None.\nStars: 0, Forks: 0.\nCreated: 2025-07-11, Last updated: 2025-07-11."
+    },
+    {
+      "id": "gh_portfolio_readme",
+      "category": "github_project",
+      "tags": [
+        "Portfolio",
+        "github",
+        "readme",
+        "TypeScript"
+      ],
+      "text": "README for GitHub project Portfolio:\n\n# Portfolio Website\n\nA modern, responsive portfolio website built with Next.js, React, TypeScript, and Tailwind CSS. \n\n\n"
+    },
+    {
+      "id": "gh_portfolio_techstack",
+      "category": "github_project",
+      "tags": [
+        "Portfolio",
+        "github",
+        "techstack"
+      ],
+      "text": "Tech stack and structure for GitHub project Portfolio:\n\nTop-level files and directories: .eslintrc.json, .gitignore, LICENSE, README.md, app/, components/, design_contex.md, next.config.js, package-lock.json, package.json, postcss.config.js, public/, scripts/, tailwind.config.js, tsconfig.json\nNode.js project: vr-portfolio-website. Dependencies: framer-motion, lucide-react, next, react, react-dom. Dev dependencies: @types/node, @types/react, @types/react-dom, autoprefixer, eslint, eslint-config-next, postcss, tailwindcss, typescript."
+    },
+    {
+      "id": "gh_wiki_overview",
+      "category": "github_project",
+      "tags": [
+        "wiki",
+        "github",
+        "HTML"
+      ],
+      "text": "GitHub project: wiki (github.com/vishalramvelu/wiki).\nDescription: No description provided.\nPrimary language: HTML. All languages: HTML (100%).\nTopics: None.\nStars: 0, Forks: 0.\nCreated: 2023-09-24, Last updated: 2023-09-24."
+    },
+    {
+      "id": "gh_wiki_readme",
+      "category": "github_project",
+      "tags": [
+        "wiki",
+        "github",
+        "readme",
+        "HTML"
+      ],
+      "text": "README for GitHub project wiki:\n\n# HKN Wiki\n\nThis repository houses the Dr. Everitt's Neighborhood wiki and is powered by Mkdocs + material theme.\n\n## Setup\n\n1. Make sure you've installed Python and pip\n2. Install pipenv: `pip install --user pipenv`\n3. Clone the repository into a folder of your choise\n\n## Working on the Wiki\n\n1. In the wiki folder, run `pipenv install; pipenv shell`. This will install dependencies and activate a python virtual environment.\n2. Run `mkdocs serve`. You can see a preview of the docs site at `http://localhost:8000` in your browser.\n3. Make changes. The website in your browser will update automatically.\n4. You should make your changes on a separate branch and follow the same pull request flow outlined on the [website](https://github.com/hkn-alpha/website).\n\n## Content Structure\n\nThe _title_ of a markdown file is defined to be the first level-1 heading it contains (that is, the text after a single `#`).\n\nThe _navigation menu_ of a folder is defined to be the top navigation bar for the `docs` folder, and otherwise:\n\n- if folder is a direct child of `docs`, the left sidebar\n- otherwise, within a dropdown under its parent folder\n\n**Content rules**:\nConsider an arbitrary folder `f`. The file `f/index.md` _must exist_ and is the first file users will see when they navigate to that folder. Any other files `f/xyz.md` will be displayed on the navigation menu corresponding to this folder. The navigation menu places the title of `index.md` first, followed by the titles of any other files, sorted by alphabetical order of _file name_ (so, you should name all your other files using the format `1.thing.md`, `2.thing.md`, ... to enforce ordering). The folder `f` will be placed into the navigation menu for its parent folder under name `f`. Thus, your folder names should be descriptive.\n\nThis is pretty formal so it's probably easier to just see what's in the `docs` folder and learn by example.\n\n### Cross-listed courses\n\nFor cross-listed courses with sections that differ by department (i.e. CS374/ECE374), create a wiki page for _both_ courses. For all other cross-listed courses, only create an ECE course page, and configure a redirect in `mkdocs.yml`:\n\n```yaml\n- redirects:\n    redirect_maps:\n      \"Course Wiki/CS Course Offerings/CS123.md\": \"Course Wiki/ECE Course Offerings/ECE456.md\"\n```\n\n## Editing\n\nAnyone is welcome to submit a PR. PRs must be reviewed by a member of the HKN website team before being merged.\n\n### Modifying the Course Graph\n\nEach semester, you should regenerate the following files:\n\n- `cs_graph.js`\n- `ece_graph.js`\n- `ce_graph.js`\n- `ee_graph.js`\n\nfollowing the instructions from the [course graph repository](https://github.com/hkn-alpha/coursegraph).\n"
+    },
+    {
+      "id": "gh_wiki_techstack",
+      "category": "github_project",
+      "tags": [
+        "wiki",
+        "github",
+        "techstack"
+      ],
+      "text": "Tech stack and structure for GitHub project wiki:\n\nTop-level files and directories: .github/, .gitignore, Pipfile, Pipfile.lock, README.md, docs/, mkdocs.yml, netlify.toml, overrides/, runtime.txt"
+    }
+  ]
+}

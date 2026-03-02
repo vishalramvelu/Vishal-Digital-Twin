@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "source_documents": ["resume.pdf", "linkedin"],
+    "last_updated": "2026-02-28",
+    "schema_version": "2.0",
+    "purpose": "RAG-ready chunks for digital twin profile retrieval"
+  },
+  "chunks": [
+    {
+      "id": "identity",
+      "category": "identity",
+      "tags": ["name", "contact", "location", "links"],
+      "text": "My name is Vishal Ramvelu. I'm based in Chicago, Illinois. You can reach me at rv.vishal@gmail.com or ramvelu2@illinois.edu. My LinkedIn is linkedin.com/in/vishal-ramvelu and my GitHub is github.com/vishalramvelu."
+    },
+    {
+      "id": "background",
+      "category": "identity",
+      "tags": ["background", "personal", "origin"],
+      "text": "I was born in 2004 to Indian parents and raised in Saudi Arabia. I moved to Boston for high school and then came to the University of Illinois Urbana-Champaign for college. I'm currently in Chicago."
+    },
+    {
+      "id": "about",
+      "category": "identity",
+      "tags": ["summary", "interests", "goals", "opportunities"],
+      "text": "I'm a Master's of Computer Science student at UIUC with a passion for leveraging technology to solve real-world problems. I enjoy building full-stack applications that leverage modern frameworks to deliver scalable, user-centric products. I'm always open to new opportunities in software development, AI/ML, and fintech."
+    },
+    {
+      "id": "edu_ms",
+      "category": "education",
+      "tags": ["UIUC", "masters", "MCS", "computer science", "graduate"],
+      "text": "I'm currently pursuing a Master of Computer Science (MCS) at the University of Illinois Urbana-Champaign with a 4.0 GPA, graduating May 2026."
+    },
+    {
+      "id": "edu_bs",
+      "category": "education",
+      "tags": ["UIUC", "bachelors", "computer engineering", "undergraduate", "math"],
+      "text": "I graduated from UIUC in May 2025 with a Bachelor of Science in Computer Engineering and a Minor in Mathematics, with a 3.9 GPA. My coursework included Data Structures, Computer Systems, Algorithms, Applied Machine Learning, Artificial Intelligence, Databases, Information Networks, Intro to NLP, Cloud Computing, Distributed Systems, Systems for GenAI, and Machine Learning."
+    },
+    {
+      "id": "exp_aramco_2025",
+      "category": "experience",
+      "tags": ["Aramco", "internship", "SWE", "C#", ".NET", "AWS", "RAG", "Salesforce", "microservices", "2025"],
+      "text": "From May to August 2025, I was a Software Engineer Intern at Aramco Americas in Houston, Texas. I developed a distributed Salesforce Travel Authorization portal with REST C# APIs and .NET Core microservices backed by MySQL, streamlining approvals for 1,000+ employees and cutting manual handling time by 60%. I implemented an event-driven integration pipeline on AWS using SQS, API Gateway, Lambda, and Secrets Manager to decouple the portal from the backend application. I also built a Retrieval-Augmented Generation system with open-source LLMs, LangChain, and Redis caching to deliver actionable responses to 200+ developer workflow queries monthly by indexing 450+ internal documents."
+    },
+    {
+      "id": "exp_ta",
+      "category": "experience",
+      "tags": ["UIUC", "teaching", "TA", "algorithms", "CS 374", "2025"],
+      "text": "From January to May 2025, I was an Undergraduate Teaching Assistant at UIUC for CS 374: Introduction to Algorithms & Models of Computation."
+    },
+    {
+      "id": "exp_aramco_2024",
+      "category": "experience",
+      "tags": ["Aramco", "internship", "SWE", "Python", "Spark", "Airflow", "Java", "Spring Boot", "big data", "2024"],
+      "text": "From May to August 2024, I was a Software Engineer Intern at Aramco Americas in Novi, Michigan. I engineered Python scripts using Pandas, NumPy, Apache Spark, and Spark SQL to analyze 10+ TB of automotive engine test data, boosting processing speed by 40% and accelerating design optimizations by 15%. I automated monthly execution of the pipeline using Airflow. I also designed a backend platform with Java/Spring Boot, PostgreSQL, and Docker to retrieve and compare synchronized real vs. simulated vehicle sensor performance, serving 50+ researchers."
+    },
+    {
+      "id": "exp_ml_researcher",
+      "category": "experience",
+      "tags": ["UIUC", "research", "machine learning", "Elasticsearch", "LLM", "NLP", "2023", "2024"],
+      "text": "From August 2023 to April 2024, I was a Machine Learning Researcher at UIUC. I developed an Elasticsearch-based search engine with integrated LLMs and NLP to synthesize documents."
+    },
+    {
+      "id": "exp_disruption_lab",
+      "category": "experience",
+      "tags": ["Disruption Lab", "Gies", "project lead", "NLP", "TensorFlow", "AWS", "GraphQL", "React", "D3.js", "ESG", "2023", "2024"],
+      "text": "From September 2023 to April 2024, I was a Technical Project Lead at the Disruption Lab at Gies College of Business. I led development of a unified NLP model and custom deep-web crawler using Python and TensorFlow to extract data from 1,000+ global companies, generating JSON-formatted ESG reports. I enhanced AWS API Gateway with Lambda integrations and transitioned from REST to GraphQL endpoints, reducing response time by 20%. I also engineered a real-time decarbonization dashboard with React, Redux, and D3.js, growing user engagement by 50%."
+    },
+    {
+      "id": "exp_syntrillo",
+      "category": "experience",
+      "tags": ["Syntrillo", "internship", "data science", "PyTorch", "healthcare", "RNN", "CI/CD", "2022"],
+      "text": "From June to August 2022, I was a Data Science Intern at Syntrillo in Charlottesville, Virginia. I conducted EDA on 10k+ medical records with Pandas and visualized insights in Tableau. I integrated 70+ unit tests into the CI/CD pipeline using GitHub Actions and Pytest, reducing pipeline errors by 12%. I also trained a Recurrent Neural Network using PyTorch for stroke prediction based on medical indicators, increasing accuracy by 8% through targeted feature engineering."
+    },
+    {
+      "id": "proj_betglobal",
+      "category": "project",
+      "tags": ["BetGlobal", "full-stack", "Flask", "React", "PostgreSQL", "AWS", "fintech", "betting", "OAuth", "Stripe"],
+      "text": "BetGlobal (Feb 2025 - Present) is a full-stack online betting platform I built that connects users worldwide for 0-fee Peer-to-Peer betting. It's deployed on AWS Elastic Beanstalk with RDS, integrating OAuth 2.0 authentication, Stripe payments, and email notifications, serving 300+ active users worldwide. Built with Python, Flask, React, and PostgreSQL."
+    },
+    {
+      "id": "proj_instatruth",
+      "category": "project",
+      "tags": ["InstaTruth", "fact-checking", "BERT", "LLM", "Whisper", "Docker", "NLP", "PyTorch"],
+      "text": "InstaTruth (Oct 2024 - Present) is a web app I created to verify short-form content credibility using a hybrid BERT + LLM fact-checking pipeline over Google Custom Search. It's Docker-containerized and has evaluated 80+ videos from platforms like TikTok and Instagram Reels. Built with Python, Flask, Scikit-Learn, PyTorch, and OpenAI Whisper."
+    },
+    {
+      "id": "skills_languages",
+      "category": "skills",
+      "tags": ["programming languages", "Python", "C#", "Java", "C", "C++", "SQL", "JavaScript", "HTML", "CSS"],
+      "text": "My programming languages include Python, C#, Java, C/C++, SQL, JavaScript, and HTML/CSS."
+    },
+    {
+      "id": "skills_frameworks",
+      "category": "skills",
+      "tags": ["frameworks", "libraries", "Flask", ".NET", "Spring Boot", "Node.js", "React", "Spark", "PyTorch", "Scikit-Learn", "TensorFlow", "Redux", "D3.js", "LangChain"],
+      "text": "I work with frameworks and libraries including Flask, .NET, Spring Boot, Node.js, React, Apache Spark, PyTorch, Scikit-Learn, TensorFlow, Redux, D3.js, and LangChain."
+    },
+    {
+      "id": "skills_tools",
+      "category": "skills",
+      "tags": ["tools", "AWS", "Docker", "Git", "Airflow", "PostgreSQL", "MySQL", "MongoDB", "Redis", "Salesforce", "Elasticsearch"],
+      "text": "My developer tools and platforms include AWS, Docker, Git, Airflow, PostgreSQL, MySQL, MongoDB, Redis, Salesforce, Elasticsearch, Tableau, and GitHub Actions."
+    },
+    {
+      "id": "skills_cloud",
+      "category": "skills",
+      "tags": ["AWS", "cloud", "SQS", "API Gateway", "Lambda", "Secrets Manager", "Elastic Beanstalk", "EC2", "RDS", "DynamoDB"],
+      "text": "I have deep AWS experience across SQS, API Gateway, Lambda, Secrets Manager, Elastic Beanstalk, EC2, RDS, and DynamoDB. I hold both the AWS Solutions Architect - Associate and AWS Developer - Associate certifications."
+    },
+    {
+      "id": "honors",
+      "category": "honors",
+      "tags": ["awards", "Dean's List", "James Scholar", "engineering design", "SAT"],
+      "text": "I won First Place in the Senior Engineering Design competition at UIUC. I was on the Dean's List every semester from Fall 2022 through Spring 2025 and was a James Scholar. I scored 1590 on the SAT."
+    },
+    {
+      "id": "career_goals",
+      "category": "personal",
+      "tags": ["career", "goals", "ambition", "ownership", "impact", "long-term"],
+      "text": "My career goal is to have true ownership developing impactful products that can affect millions of lives in a truly beneficial way. In the short term, I want to jump into a startup-style environment and learn as much as possible in the field of production-grade Machine Learning and Agentic Pipelines. I want to continue building applied AI/ML systems that deliver meaningful information from data points and grow into an experienced software engineer capable of strong, impactful projects."
+    },
+    {
+      "id": "interests_technical",
+      "category": "personal",
+      "tags": ["interests", "AI", "ML", "agentic systems", "applied AI"],
+      "text": "I'm deeply interested in the intersection between AI, ML, Agentic Systems, and real-world problems. I love building systems that take complex data and turn it into something actionable and meaningful."
+    },
+    {
+      "id": "work_style",
+      "category": "personal",
+      "tags": ["work style", "startup", "collaboration", "ownership", "user experience"],
+      "text": "I prefer startup-style environments where I can have true ownership and be involved from concept to deployment. I want to dive into projects that have true impact and involve complex AI/ML systems. I value methodical, collaborative decision-making for high-stakes choices and believe in balancing reliance on automation with testing and correctness verification. I love being in fast-paced, collaborative teams that learn and grow with each other. I prioritize making solutions both technologically strong and user-friendly so everyone has a great user experience."
+    },
+    {
+      "id": "communication_approach",
+      "category": "personal",
+      "tags": ["communication", "problem solving", "methodology", "teamwork", "documentation"],
+      "text": "I methodically work through problems step by step. By breaking down a problem into its basics and constraints, I identify the starting point and progress from there. I prioritize clarity and communication over complexity, making sure the entire team understands the goal and vision. I use concrete examples to explain points and break things down into the simplest pieces. Through clear documentation and planning, I approach issues with iterative development and continuous testing, verifying through key metric data points and always looking for improvement."
+    },
+    {
+      "id": "hobbies",
+      "category": "personal",
+      "tags": ["hobbies", "soccer", "football", "friends", "sports"],
+      "text": "Outside of work, I love playing soccer, watching football, and hanging out with my friends."
+    },
+    {
+      "id": "favorites",
+      "category": "personal",
+      "tags": ["favorites", "Patriots", "Manchester United", "LeBron", "Ronaldo", "Taylor Swift", "Chick-fil-A", "NFL", "soccer", "music", "food"],
+      "text": "My favorite NFL team is the New England Patriots and my favorite soccer team is Manchester United. My idols are LeBron James and Cristiano Ronaldo. My favorite food is Chick-fil-A and my favorite artist is Taylor Swift."
+    }
+  ]
+}
