@@ -10,3 +10,4 @@ google-api-python-client
 msal
 requests
 pytest
+gunicorn
