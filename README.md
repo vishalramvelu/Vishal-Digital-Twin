@@ -171,7 +171,7 @@ python -m tests.test_evaluation
 | **factual** | Profile questions (education, skills, experience, projects, career goals) — answer must hit expected topic coverage and confidence. |
 | **calendar** | Google Calendar (e.g. "What do I have this week?", "Am I free in the next 7 days?") — validates calendar tool usage and response shape. |
 | **email** | Outlook (e.g. "Summarize my recent emails", "Do I have emails about X?") — validates email search/summary behavior. |
-| **hallucination_test** | Questions the profile doesn't answer (favorite color, home address) — passes if the answer expresses uncertainty (e.g. "I don't know", "can't share") without requiring every phrase. |
+| **hallucination** | Questions the profile doesn't answer (favorite color, home address) — passes if the answer expresses uncertainty (e.g. "I don't know", "can't share") without requiring every phrase. |
 | **synthesis** | Multi-source reasoning (e.g. "Why am I a good fit for an AI role?") — topic coverage + confidence. |
 
 Results: 13/13 tests passed (100%)
