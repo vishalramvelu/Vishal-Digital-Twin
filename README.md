@@ -4,6 +4,8 @@ An agentic RAG system that acts as my digital twin. Ask it anything about my bac
 
 Deep-dive focus: **Data Integrations** (Outlook + Google Calendar).
 
+Live App: [Vishal's Twin](https://vishdigitaltwin.up.railway.app/)
+
 ## Architecture
 
 ```
