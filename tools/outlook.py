@@ -14,7 +14,13 @@ GRAPH_BASE = "https://graph.microsoft.com/v1.0"
 CLIENT_ID = os.environ["OUTLOOK_CLIENT_ID"]
 TENANT_ID = os.environ["OUTLOOK_TENANT_ID"]
 SCOPES = ["Mail.Read", "Mail.ReadWrite", "Mail.Send"]
-CACHE_PATH = Path(__file__).resolve().parent.parent / ".msal_token_cache.json"
+CACHE_PATH = Path(
+    os.environ.get(
+        "OUTLOOK_TOKEN_CACHE_PATH",
+        str(Path(__file__).resolve().parent.parent / ".msal_token_cache.json"),
+    )
+).expanduser()
+CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 _cache = msal.SerializableTokenCache()
 if CACHE_PATH.exists():
@@ -29,7 +35,12 @@ _msal_app = msal.PublicClientApplication(
 
 def _save_cache():
     if _cache.has_state_changed:
-        CACHE_PATH.write_text(_cache.serialize())
+        try:
+            CACHE_PATH.write_text(_cache.serialize())
+        except Exception:
+            # Non-fatal: if the filesystem is read-only/ephemeral, auth will still work
+            # but you'll need to re-authenticate after restarts.
+            pass
 
 
 atexit.register(_save_cache)

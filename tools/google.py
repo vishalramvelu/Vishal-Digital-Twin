@@ -44,22 +44,33 @@ def _get_credentials():
             client_secret=CLIENT_SECRET,
             scopes=SCOPES,
         )
-        creds.refresh(Request())
+        try:
+            creds.refresh(Request())
+        except Exception as e:
+            raise RuntimeError(
+                "Google Calendar auth failed (token expired or invalid). "
+                "Re-run OAuth locally and set GOOG_REFRESH_TOKEN in your environment."
+            ) from e
         return creds
 
-    # First run — open browser for consent
+    # No refresh token: browser flow only works locally; on servers (e.g. Railway) fail gracefully
+    if os.environ.get("RAILWAY_ENVIRONMENT") or os.environ.get("CI"):
+        raise RuntimeError(
+            "Google Calendar is not configured: GOOG_REFRESH_TOKEN is missing. "
+            "Run the app locally once to complete OAuth in your browser, then copy the refresh token into your deployment environment."
+        )
+    # First run locally — open browser for consent
     flow = InstalledAppFlow.from_client_config(_CLIENT_CONFIG, SCOPES)
     creds = flow.run_local_server(port=8090)
-
-    # Persist refresh token to .env
     set_key(str(ENV_PATH), "GOOG_REFRESH_TOKEN", creds.refresh_token)
     os.environ["GOOG_REFRESH_TOKEN"] = creds.refresh_token
-
     return creds
 
 
 def _get_service():
-    return build("calendar", "v3", credentials=_get_credentials())
+    """Build Calendar API service. Raises on credential or API errors."""
+    creds = _get_credentials()
+    return build("calendar", "v3", credentials=creds)
 
 
 def _ensure_tz(dt_str: str) -> str:
@@ -83,7 +94,10 @@ def _list_calendar_events(date_range=None, attendees=None, keyword=None):
     Returns:
         List of event dicts (max 25, ordered by start time).
     """
-    service = _get_service()
+    try:
+        service = _get_service()
+    except Exception as e:
+        return [{"error": f"Calendar unavailable: {e}"}]
 
     params = {
         "calendarId": "primary",
@@ -149,4 +163,4 @@ def _get_calendar_event(event_id):
         service = _get_service()
         return service.events().get(calendarId="primary", eventId=event_id).execute()
     except Exception as e:
-        return {"error": f"Failed to fetch event: {e}"}
+        return {"error": f"Calendar unavailable or event not found: {e}"}
